@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode colors for InputActivity -->
+    <color name="input_activity_background">#121212</color>
+    <color name="input_activity_title_bar">#1F1F1F</color>
+    <color name="input_activity_title_bar_dark">#2C2C2C</color>
+    <color name="input_activity_title_text">@color/white</color>
+    <color name="input_activity_content_background">#1E1E1E</color>
+    <color name="input_activity_edit_text_background">#2C2C2C</color>
+    <color name="input_activity_edit_text">@color/white</color>
+</resources>
+

@@ -182,7 +182,7 @@ class InputAccessibilityService : AccessibilityService() {
                 textToSend = ""
             }
             // 根据hint和文本内容推断IME选项
-            var imeOptions = inferImeOptions(hint, text, editTextNode.contentDescription?.toString())
+            val imeOptions = inferImeOptions(hint, text, editTextNode.contentDescription?.toString())
 
             Log.d(TAG, "Showing InputActivity for EditText: hint=$hint, text=$text, inputType=$inputType, imeOptions=$imeOptions")
 

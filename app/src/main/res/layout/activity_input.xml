@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5"
+    android:background="@color/input_activity_background"
     android:fitsSystemWindows="true">
 
     <!-- 标题栏 -->
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#2196F3"
+        android:background="@color/input_activity_title_bar"
         android:padding="8dp"
         android:elevation="4dp">
 
@@ -22,16 +22,16 @@
             android:text="副屏输入辅助"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/input_activity_title_text" />
 
         <Button
             android:id="@+id/btnClose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="关闭"
-            android:textColor="@android:color/white"
+            android:textColor="@color/input_activity_title_text"
             android:textSize="16sp"
-            android:backgroundTint="#1976D2" />
+            android:backgroundTint="@color/input_activity_title_bar_dark" />
 
     </LinearLayout>
 
@@ -41,7 +41,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="@android:color/white"
+        android:background="@color/input_activity_content_background"
         android:padding="10dp">
 
         <EditText
@@ -50,7 +50,9 @@
             android:layout_height="wrap_content"
             android:gravity="top|start"
             android:hint="@string/input_hint"
-            android:background="@android:color/white"
+            android:background="@color/input_activity_edit_text_background"
+            android:textColor="@color/input_activity_edit_text"
+            android:textColorHint="?android:attr/textColorHint"
             android:padding="8dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
