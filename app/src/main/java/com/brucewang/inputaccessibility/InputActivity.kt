@@ -54,7 +54,7 @@ class InputActivity : Activity() {
 
             if (displays.size > 1) {
                 // 优先选择非默认显示器（通常是副屏）
-                val secondaryDisplay = displays.firstOrNull { it.displayId != android.view.Display.DEFAULT_DISPLAY }
+                val secondaryDisplay = displays.firstOrNull { it.displayId != displays[0].displayId }
 
                 if (secondaryDisplay != null) {
                     Log.d(TAG, "Starting activity on secondary display: id=${secondaryDisplay.displayId}, name=${secondaryDisplay.name}")
@@ -68,15 +68,9 @@ class InputActivity : Activity() {
                     }
                     return
                 }
-            }
-
-            // 如果没有第二个屏幕，在默认屏幕启动
-            Log.d(TAG, "Starting activity on default display")
-            try {
-                context.startActivity(intent)
-                Log.d(TAG, "Activity started successfully on default display")
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to start activity on default display", e)
+            } else {
+                // 如果没有第二个屏幕，不启动
+                Log.d(TAG, "There is no secondary display available. Activity will not be started.")
             }
         }
 
