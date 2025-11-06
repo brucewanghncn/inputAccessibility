@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">副屏输入辅助</string>
+    <string name="accessibility_service_name">输入辅助服务</string>
+    <string name="accessibility_service_description">检测EditText聚焦事件，并在另一个屏幕显示输入浮窗</string>
+    <string name="enable_accessibility_service">请启用无障碍服务</string>
+    <string name="accessibility_service_enabled">无障碍服务已启用</string>
+    <string name="service_running">服务运行中</string>
+    <string name="input_hint">在此输入...</string>
+    <string name="send">发送</string>
+</resources>

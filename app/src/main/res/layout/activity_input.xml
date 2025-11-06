@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true">
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2196F3"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="副屏输入辅助"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="#1976D2" />
+
+    </LinearLayout>
+
+    <!-- 输入区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etFloatingInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:hint="@string/input_hint"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:minHeight="40dp"
+            android:scrollbars="vertical"
+            android:imeOptions="flagNoExtractUi"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+</LinearLayout>
+
